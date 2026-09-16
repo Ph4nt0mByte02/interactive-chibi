@@ -20,6 +20,42 @@ body {
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
 .chibi-shadow {
   filter: drop-shadow(0 22px 30px rgba(44, 31, 27, 0.18));
+}
+
+@keyframes gentle-float {
+  0%,
+  100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes heart-pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  30% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes soft-shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-4px); }
+  40% { transform: translateX(4px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+}
+
+.animate-gentle-float {
+  animation: gentle-float 4.6s ease-in-out infinite;
+}
+
+.animate-heart-pop {
+  animation: heart-pop 0.28s ease-out both;
+}
+
+.animate-soft-shake {
+  animation: soft-shake 0.36s ease-in-out;
 }

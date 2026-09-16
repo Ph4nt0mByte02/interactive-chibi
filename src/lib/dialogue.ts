@@ -1,4 +1,6 @@
-export const romanticMessages = [
+import type { Dialogue } from '@/types/chibi';
+
+export const romanticMessages: Dialogue[] = [
   { text: 'I love youuuuuuuu', mood: 'love' },
   { text: 'I miss youu my jaan', mood: 'shy' },
   { text: "You know what? you're too beautiful", mood: 'happy' },
@@ -9,10 +11,16 @@ export const romanticMessages = [
   { text: 'I am looking at youuu', mood: 'love' },
 ];
 
-export const idleActions = [
+export const idleActions: Dialogue[] = [
   { text: '*blink*', mood: 'idle' },
   { text: '...', mood: 'idle' },
   { text: 'I was thinking about you.', mood: 'shy' },
   { text: '❤️', mood: 'love' },
   { text: 'Oh! hi hi!', mood: 'happy' },
+];
+
+export const fallRecoveryMessages: Dialogue[] = [
+  { text: 'Ow ow... I am okay!', mood: 'hurt' },
+  { text: 'That was a big tumble!', mood: 'dizzy' },
+  { text: 'Okay okay, I am back~', mood: 'standing_up' as never },
 ];
