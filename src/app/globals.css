@@ -48,6 +48,22 @@ button {
   80% { transform: translateX(3px); }
 }
 
+@keyframes surprise-pop {
+  0% { transform: scale(0.6) translateY(8px); opacity: 0; }
+  40% { transform: scale(1.08) translateY(0); opacity: 1; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes gentle-bob {
+  0%, 100% { transform: translateY(0) scaleY(1); }
+  50% { transform: translateY(-3px) scaleY(1.01); }
+}
+
 .animate-gentle-float {
   animation: gentle-float 4.6s ease-in-out infinite;
 }
@@ -58,4 +74,16 @@ button {
 
 .animate-soft-shake {
   animation: soft-shake 0.36s ease-in-out;
+}
+
+.animate-surprise-pop {
+  animation: surprise-pop 0.26s ease-out both;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 1.25s linear infinite;
+}
+
+.animate-gentle-bob {
+  animation: gentle-bob 0.9s ease-in-out infinite;
 }

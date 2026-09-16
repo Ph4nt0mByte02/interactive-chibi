@@ -7,8 +7,9 @@ A polished interactive chibi web experience built with Next.js, TypeScript, Tail
 - Hover/touch reactions
 - Click/tap reactions
 - Drag interaction
-- Fall and recovery behavior
+- Enhanced fall and recovery behavior with staged comeback animation
 - Random romantic/friendly dialogue bubbles
+- Expanded visual moods (blush, heart-eyes, sleepy, surprised, dizzy/hurt, standing-up)
 - Sound toggle and reset control
 - Mobile-friendly, deployable UI
 
